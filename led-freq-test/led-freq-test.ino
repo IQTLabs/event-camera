@@ -22,7 +22,7 @@
   http://www.arduino.cc/en/Tutorial/Blink
 */
 
- #define LED_PWR 25
+
  #define LED 2
  #define CONSTANT_LED 7
 
@@ -30,16 +30,9 @@
 // the setup function runs once when you press reset or power the board
 void setup() {
     Serial.begin(9600);
-    while (!Serial);
-  // initialize digital pin LED_BUILTIN as an output.
-   // intitialize the digital Pin as an output
- /* pinMode(RED, OUTPUT);
-  pinMode(BLUE, OUTPUT);
-  pinMode(GREEN, OUTPUT);
-  digitalWrite(GREEN, HIGH);
-  digitalWrite(BLUE, HIGH);
-  pinMode(LED_BUILTIN, OUTPUT);*/
-  pinMode(LED, OUTPUT);
+
+
+    pinMode(LED, OUTPUT);
 
 }
 
@@ -87,35 +80,6 @@ while (currentMicros < doneMicros) {
 
 // the loop function runs over and over again forever
 void loop() {
- /* noTone(LED);
-  Serial.println("31hz");
-  tone(LED, 31);
-  delay(3000);
-  noTone(LED);
-  Serial.println("40hz");
-  tone(LED, 40);
-  delay(3000);
-  noTone(LED);
-  Serial.println("50hz");
-  tone(LED, 50);
-  delay(3000);
-  noTone(LED);
-  Serial.println("60hz");
-  tone(LED, 60);
-  delay(3000);
-  noTone(LED);
-  Serial.println("70hz");
-  tone(LED, 70);
-  delay(3000);
-  noTone(LED);
-  Serial.println("80hz");
-  tone(LED, 80);
-  delay(3000);
-  noTone(LED);
-  Serial.println("90hz");
-  tone(LED, 90);
-  delay(3000);  */
-
   noTone(LED);
   Serial.println("100hz");
   tone(LED, 100);
@@ -145,30 +109,28 @@ void loop() {
   tone(LED, 700);
   delay(3000);
   noTone(LED);
-
-   Serial.println("800hz");
+  Serial.println("800hz");
   tone(LED, 800);
   delay(3000);
   noTone(LED);
-
-   Serial.println("900hz");
+  Serial.println("900hz");
   tone(LED, 900);
   delay(3000);
   noTone(LED);
-     Serial.println("1000hz");
+  Serial.println("1000hz");
   tone(LED, 1000);
   delay(3000);
   noTone(LED);
   /*
    blink_pattern(100);                   // wait for a second
-      blink_pattern(200);
+   blink_pattern(200);
    blink_pattern(300);
    blink_pattern(400);
    blink_pattern(500);
-      blink_pattern(600);
+   blink_pattern(600);
    blink_pattern(700);
    blink_pattern(800);
    blink_pattern(900);
    blink_pattern(1000);
-      */
+    */
 }
